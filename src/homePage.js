@@ -19,7 +19,7 @@ const homePage = () => {
 }
 
 const placeHome = () => {
-    const main = document.querySelector(".main");
+    const main = document.querySelector("#content");
     main.textContent = "";
     main.appendChild(homePage());
     

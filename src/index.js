@@ -1,5 +1,4 @@
-import {homePage} from "./homePage";
-
+import {buttons} from "./buttons"
 //console.log("Whatever, mate.")
 
-homePage();
+buttons();
