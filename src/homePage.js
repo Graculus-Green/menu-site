@@ -24,4 +24,4 @@ const placeHome = () => {
     main.appendChild(homePage());
     
 }
-export {placeHome};
+export {placeHome as homePage};

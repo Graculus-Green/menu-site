@@ -1,5 +1,5 @@
-import {placeHome} from "./homePage";
+import {homePage} from "./homePage";
 
 //console.log("Whatever, mate.")
 
-placeHome();
+homePage();
