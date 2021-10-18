@@ -1,0 +1,23 @@
+{
+  "name": "menu-site",
+  "version": "1.0.0",
+  "description": "Menu site loaded via JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Graculus-Green/menu-site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Graculus-Green/menu-site/issues"
+  },
+  "homepage": "https://github.com/Graculus-Green/menu-site#readme",
+  "devDependencies": {
+    "webpack": "^5.58.2",
+    "webpack-cli": "^4.9.1"
+  }
+}
