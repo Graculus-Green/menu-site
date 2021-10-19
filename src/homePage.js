@@ -6,7 +6,6 @@ const addPara = (text) => {
 
 const homePage = () => {
 
-   
     const home = document.createElement("div");
     home.classList.add("home");
 
@@ -19,9 +18,9 @@ const homePage = () => {
 }
 
 const placeHome = () => {
-    const main = document.querySelector("#content");
-    main.textContent = "";
-    main.appendChild(homePage());
+    const page = document.querySelector(".current-page")
+    page.textContent = "";
+    page.appendChild(homePage());
     
 }
 export {placeHome as homePage};
