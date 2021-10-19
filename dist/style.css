@@ -1,8 +1,29 @@
+/*
+coral: #E27D60;
+blue: #85DCB
+peach: #E8A87C
+purple: #C38D9E
+cyan: #41B3A3 */
+
+
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: #85dcb8;
+    color: snow;
+    padding: 16px;
+    font-weight: 800;
+}
+
+.current-page {
+    display: flex;
+    flex-direction: column;
+    background-color: #E8A87C;
+    margin: 32px;
+    padding: 16px;
+    border-radius: 10px;
 }
 
 .button-container {
@@ -10,8 +31,26 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    background-color: #41B3A3;
+    margin: 32px;
+    border-radius: 10px;
+
+}
+
+.element {
+    display: flex;
+    padding: 8px;
+    background-color: #C38D9E;
+    border-radius: 5px;
 }
 
 .btn {
+    display: flex;
+    padding:5px;
     margin: 16px;
+    border-radius: 5px;
+    color: #C38D9E;
+    font-weight: 900;
+    
+    background-color: #85dcb8;
 }

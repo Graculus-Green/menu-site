@@ -1,5 +1,6 @@
 const addPara = (text) => {
     const para = document.createElement("p");
+    para.classList.add("element");
     para.textContent = text;
     return para;
 }

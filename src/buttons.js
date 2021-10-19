@@ -35,9 +35,12 @@ const buttonContact = () => {
 
 const placeButton = () => {
     const main = document.querySelector("#content");
-    main.appendChild(buttonHome());
-    main.appendChild(buttonMenu());
-    main.appendChild(buttonContact());
+    const buttonContainer = document.querySelector(".button-container");
+
+    buttonContainer.appendChild(buttonHome());
+    buttonContainer.appendChild(buttonMenu());
+    buttonContainer.appendChild(buttonContact());
+
     const page = document.createElement("div");
     main.appendChild(page);
     page.classList.add("current-page");
