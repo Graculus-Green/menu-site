@@ -4,22 +4,22 @@ const addPara = (text) => {
     return para;
 }
 
-const menu = () => {
-    const home = document.createElement("div");
-    home.classList.add("menu");
+const contact = () => {
+    const contact = document.createElement("div");
+    contact.classList.add("contact");
 
-    home.appendChild(addPara("Appetiser"));
-    home.appendChild(addPara("Main"));
-    home.appendChild(addPara("Pudding"));
-    home.appendChild(addPara("Drinks"));
+    contact.appendChild(addPara("Address"));
+    contact.appendChild(addPara("Phone"));
+    contact.appendChild(addPara("E-mail"));
+    contact.appendChild(addPara("Map"));
 
-    return home;
+    return contact;
 }
 
-const placeMenu = () => {
+const placeContact = () => {
     const page = document.querySelector(".current-page")
     page.textContent = "";
-    page.appendChild(menu());
+    page.appendChild(contact());
     
 }
-export {placeMenu as menu};
+export {placeContact as contact};

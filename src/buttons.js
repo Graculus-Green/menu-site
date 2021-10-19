@@ -1,5 +1,6 @@
 import { menu } from "./menu";
 import { homePage } from "./homePage";
+import { contact } from "./contact";
 
 const addButton = (text) => {
     const btn = document.createElement("button");
@@ -24,10 +25,19 @@ const buttonMenu = () => {
     return btn;
 };
 
+const buttonContact = () => {
+    const btn = addButton("Contact us");
+    btn.addEventListener("click", () => {
+        contact()
+    });
+    return btn;
+};
+
 const placeButton = () => {
     const main = document.querySelector("#content");
     main.appendChild(buttonHome());
     main.appendChild(buttonMenu());
+    main.appendChild(buttonContact());
     const page = document.createElement("div");
     main.appendChild(page);
     page.classList.add("current-page");
