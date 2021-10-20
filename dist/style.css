@@ -73,7 +73,8 @@ body {
     border-radius: 5px;
     color: snow;
     font-weight: 900;
-    
+    flex-grow: 1;
+    font-size: 24px;
     background-color: #85dcb8;
 }
 
