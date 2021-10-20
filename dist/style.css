@@ -55,7 +55,7 @@ body {
     justify-content: right;
 }
 
-.elTitle, .para {
+.elTitle {
     display: flex;
     flex-direction: row;
     
@@ -70,14 +70,18 @@ body {
     display: flex;
     padding:5px;
     margin: 16px;
-    border-radius: 5px;
     color: snow;
     font-weight: 900;
     flex-grow: 1;
     font-size: 24px;
-    background-color: #85dcb8;
+    background-color: #41B3A3;
+    border: none;
 }
 
-#current {
-    background-color: rebeccapurple;
+.btn:focus {
+    border-bottom: 3px solid #85dcb8;
+  }
+
+a[href], input[type='submit'], input[type='image'], label[for], select, button, .pointer {
+    cursor: pointer;
 }

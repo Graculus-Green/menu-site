@@ -1,19 +1,26 @@
-const addPara = (text) => {
+const addElement = (title, text) => {
+    const element = document.createElement("div");
+    const elTitle = document.createElement("h2");
     const para = document.createElement("p");
-    para.classList.add("element");
-
+    element.classList.add("element");
+    elTitle.textContent = title;
+    elTitle.classList.add("elTitle");
     para.textContent = text;
-    return para;
-}
+
+    element.appendChild(elTitle)
+    element.appendChild(para);
+    return element;
+};
+
 
 const contact = () => {
     const contact = document.createElement("div");
     contact.classList.add("contact");
 
-    contact.appendChild(addPara("Address"));
-    contact.appendChild(addPara("Phone"));
-    contact.appendChild(addPara("E-mail"));
-    contact.appendChild(addPara("Map"));
+    contact.appendChild(addElement("Address", "42 30007 \nMiddle of the Ocean \nGreat Garbage Patch"));
+    contact.appendChild(addElement("Phone", "Just yell, mate"));
+    contact.appendChild(addElement("E-mail", "somerestaurant@garbagepatch.com"));
+    contact.appendChild(addElement("Map", "maybe?"));
 
     return contact;
 }

@@ -4,12 +4,13 @@ const addElement = (title, text) => {
     const para = document.createElement("p");
     element.classList.add("element");
     elTitle.textContent = title;
+    elTitle.classList.add("elTitle");
     para.textContent = text;
 
     element.appendChild(elTitle)
     element.appendChild(para);
     return element;
-}
+};
 
 const homePage = () => {
 

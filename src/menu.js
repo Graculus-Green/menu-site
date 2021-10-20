@@ -1,18 +1,25 @@
-const addPara = (text) => {
+const addElement = (title, text) => {
+    const element = document.createElement("div");
+    const elTitle = document.createElement("h2");
     const para = document.createElement("p");
-    para.classList.add("element");
+    element.classList.add("element");
+    elTitle.textContent = title;
+    elTitle.classList.add("elTitle");
     para.textContent = text;
-    return para;
-}
+
+    element.appendChild(elTitle)
+    element.appendChild(para);
+    return element;
+};
 
 const menu = () => {
     const home = document.createElement("div");
     home.classList.add("menu");
 
-    home.appendChild(addPara("Appetiser"));
-    home.appendChild(addPara("Main"));
-    home.appendChild(addPara("Pudding"));
-    home.appendChild(addPara("Drinks"));
+    home.appendChild(addElement("Appetiser", "sieFHSzlfj"));
+    home.appendChild(addElement("Main", "slhfosjzx"));
+    home.appendChild(addElement("Pudding", "shodfhcslx"));
+    home.appendChild(addElement("Drinks", "jsoifhlvlzsjx"));
 
     return home;
 }
