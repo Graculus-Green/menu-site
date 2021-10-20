@@ -1,9 +1,14 @@
-const addPara = (text) => {
+const addElement = (title, text) => {
+    const element = document.createElement("div");
+    const elTitle = document.createElement("h2");
     const para = document.createElement("p");
-    para.classList.add("element");
-
+    element.classList.add("element");
+    elTitle.textContent = title;
     para.textContent = text;
-    return para;
+
+    element.appendChild(elTitle)
+    element.appendChild(para);
+    return element;
 }
 
 const homePage = () => {
@@ -11,10 +16,10 @@ const homePage = () => {
     const home = document.createElement("div");
     home.classList.add("home");
 
-    home.appendChild(addPara("First Line."));
-    home.appendChild(addPara("Second Line."));
-    home.appendChild(addPara("Third Line."));
-    home.appendChild(addPara("Fourth Line."));
+    home.appendChild(addElement("First Line", "sklfhsl"));
+    home.appendChild(addElement("Second Line", "sdnofjsh"));
+    home.appendChild(addElement("Third Line", "ksdhfojs"));
+    home.appendChild(addElement("Fourth Line", "slKUGDfhljA"));
 
     return home;
 }

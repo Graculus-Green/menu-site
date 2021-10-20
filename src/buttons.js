@@ -12,7 +12,7 @@ const addButton = (text) => {
 const buttonHome = () => {
     const btn = addButton("Home");
     btn.addEventListener("click", () => {
-        homePage()
+        homePage();        
     });
     return btn;
 };

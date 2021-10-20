@@ -17,6 +17,10 @@ body {
     font-weight: 800;
 }
 
+.main {
+    width: 100%;
+}
+
 .current-page {
     display: flex;
     flex-direction: column;
@@ -35,13 +39,31 @@ body {
     margin: 32px;
     border-radius: 10px;
 
+    align-items: center;
+    justify-content: center;
+
 }
 
 .element {
     display: flex;
-    padding: 8px;
+    flex-direction: column;
     background-color: #C38D9E;
     border-radius: 5px;
+    padding: 8px;
+    margin: 8px;
+    align-items: right;
+    justify-content: right;
+}
+
+.elTitle, .para {
+    display: flex;
+    flex-direction: row;
+    
+    background-color: #C38D9E;
+    border-radius: 5px;
+
+    align-items: center;
+    justify-content: right;
 }
 
 .btn {
@@ -49,8 +71,12 @@ body {
     padding:5px;
     margin: 16px;
     border-radius: 5px;
-    color: #C38D9E;
+    color: snow;
     font-weight: 900;
     
     background-color: #85dcb8;
+}
+
+#current {
+    background-color: rebeccapurple;
 }
